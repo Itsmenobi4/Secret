@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kontak Azizah</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body class="bg-gradient-to-b from-white to-sky-50 font-sans">
+<body class="bg-gradient-to-b from-white to-sky-50 font-sans min-h-screen flex flex-col">
+
+  <!-- Navbar -->
   <nav class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-50">
     <h1 class="text-xl font-semibold">Azizah</h1>
     <ul class="flex gap-6 text-gray-600">
@@ -17,9 +21,10 @@
     </ul>
   </nav>
 
-  <section class="max-w-xl mx-auto p-10">
+  <!-- Form -->
+  <section class="max-w-xl mx-auto p-10 flex-1">
     <h2 class="text-3xl font-bold mb-4">Hubungi Azizah</h2>
-    <form class="space-y-4" onsubmit="return fakeSendMessage(event)">
+    <form class="space-y-4" id="contactForm">
       <input type="text" placeholder="Nama" required class="w-full border rounded p-2 focus:ring-2 focus:ring-sky-400">
       <input type="email" placeholder="Email" required class="w-full border rounded p-2 focus:ring-2 focus:ring-sky-400">
       <textarea placeholder="Pesan" required class="w-full border rounded p-2 h-32 focus:ring-2 focus:ring-sky-400"></textarea>
@@ -27,7 +32,11 @@
     </form>
   </section>
 
-  <footer class="text-center text-gray-400 py-6">© 2025 Dibuat oleh some people</footer>
+  <!-- Footer -->
+  <footer class="text-center text-gray-400 py-6 mt-auto">
+    © 2025 Dibuat oleh some people
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
