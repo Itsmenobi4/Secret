@@ -6,24 +6,73 @@
   <title>Azizah Indah Purnama Sari</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-b from-white to-sky-50 font-sans">
+<body class="bg-gradient-to-b from-white to-sky-50 font-sans text-gray-800">
   <!-- Navbar -->
-  <nav class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-50">
-    <h1 class="text-xl font-semibold">Azizah</h1>
-    <ul class="flex gap-6 text-gray-600">
-      <li><a href="index.html" class="hover:text-sky-600">Home</a></li>
-      <li><a href="about.html" class="hover:text-sky-600">About</a></li>
-      <li><a href="gallery.html" class="hover:text-sky-600">Gallery</a></li>
-      <li><a href="contact.html" class="hover:text-sky-600">Contact</a></li>
+  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-sky-600">Azizah</h1>
+    <ul class="flex gap-6 text-gray-700 font-medium">
+      <li><a href="index.html" class="hover:text-sky-600 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-sky-600 transition">About</a></li>
+      <li><a href="gallery.html" class="hover:text-sky-600 transition">Gallery</a></li>
+      <li><a href="contact.html" class="hover:text-sky-600 transition">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="max-w-5xl mx-auto p-10 text-center">
-    <h2 class="text-4xl font-bold mb-3">Azizah Indah Purnama Sari</h2>
-    <p class="text-gray-600 max-w-xl mx-auto">Bocah Tengil yang bawa vibe positif buat orang orang</p>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-sky-100 via-white to-indigo-50"></div>
+    <div class="relative max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div class="text-center md:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 leading-tight">
+          Azizah Indah <br class="hidden md:block"/> Purnama Sari
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">Bocah tengil yang selalu bawa vibe positif buat orang-orang sekitarnya ✨.</p>
+        <a href="about.html" class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition transform hover:scale-105">
+          Kenal Lebih Dekat
+        </a>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="foto5.jpg" alt="Azizah" class="rounded-full shadow-xl border-4 border-sky-200 w-72 h-72 object-cover hover:scale-105 transform transition">
+      </div>
+    </div>
   </section>
 
-  <footer class="text-center text-gray-400 py-6">Watermark</footer>
+  <!-- Footer Aesthetic -->
+  <footer class="bg-gradient-to-r from-sky-700 to-indigo-800 text-gray-200 py-12 mt-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <!-- Branding -->
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-3">Azizah Indah Purnama Sari</h3>
+        <p class="text-sm leading-relaxed opacity-90">Website personal berisi informasi, galeri, dan kontak resmi.</p>
+      </div>
+      <!-- Links -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Navigasi</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Kontak</h4>
+        <p class="text-sm flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4.5A2.5 2.5 0 014.5 2h15A2.5 2.5 0 0122 4.5v15a2.5 2.5 0 01-2.5 2.5h-15A2.5 2.5 0 012 19.5v-15zM4 6.75v10.5l6.5-5.25L4 6.75zm16 0l-6.5 5.25L20 17.25V6.75zM5.34 5h13.32L12 10.25 5.34 5z"/></svg>
+          <a href="mailto:azizah@example.com" class="hover:text-white">azizah@example.com</a>
+        </p>
+        <p class="text-sm flex items-center gap-2 mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 2.33.57 3.54.57.55 0 1 .45 1 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5c.55 0 1 .45 1 1 0 1.21.2 2.42.57 3.54.14.38.05.81-.24 1.05l-2.21 2.2z"/></svg>
+          <a href="https://wa.me/6281996472132" target="_blank" class="hover:text-white">+62 819-9647-2132</a>
+        </p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-400 mt-12 border-t border-gray-700 pt-4">
+      © 2025 Azizah Indah Purnama Sari. All Rights Reserved.
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
