@@ -21,3 +21,15 @@ function fakeSendMessage(e) {
   alert("Pesan terkirim (dummy).");
   return false;
 }
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  Swal.fire({
+    title: "Pesan terkirim!",
+    text: "Terima kasih sudah menghubungi Azizah 💌",
+    icon: "success",
+    confirmButtonColor: "#0ea5e9"
+  });
+
+  this.reset();
+});
